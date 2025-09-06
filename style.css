@@ -1,30 +1,73 @@
-body {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 20px;
 }
 
+/* Body with background */
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/19/08/17/watercolor-5062356_1280.jpg");   /* apni background image ka naam dal */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Overlay for readability */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  z-index: -1;
+}
+
+/* Headings */
 h1 {
-  color: #2c3e50;
+  font-size: 3rem;
+  margin: 20px 0;
+  text-shadow: 2px 2px 8px black;
 }
 
 h2 {
-  color: #34495e;
+  font-size: 2rem;
+  margin: 15px 0;
+  text-shadow: 1px 1px 6px black;
 }
 
+/* Paragraphs */
 p {
-  color: #555;
-}
-button {
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-shadow: 1px 1px 4px black;
 }
 
-button:hover {
-  background-color: #2980b9;
+/* Profile image */
+img {
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 5px solid white;
+  width: 150px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: orange;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: darkorange;
 }
