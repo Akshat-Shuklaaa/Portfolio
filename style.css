@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +5,9 @@
   font-family: Arial, sans-serif;
 }
 
-/* Body with background */
+
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2020/04/19/08/17/watercolor-5062356_1280.jpg");   /* apni background image ka naam dal */
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/19/08/17/watercolor-5062356_1280.jpg");   
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,7 +17,7 @@ body {
   position: relative;
 }
 
-/* Overlay for readability */
+
 body::before {
   content: "";
   position: absolute;
@@ -26,11 +25,11 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5); /* dark overlay */
+  background: rgba(0,0,0,0.5); 
   z-index: -1;
 }
 
-/* Headings */
+
 h1 {
   font-size: 3rem;
   margin: 20px 0;
@@ -43,16 +42,15 @@ h2 {
   text-shadow: 1px 1px 6px black;
 }
 
-/* Paragraphs */
+
 p {
   font-size: 1.2rem;
   margin: 10px 0;
   text-shadow: 1px 1px 4px black;
 }
 
-/* Profile image */
+
 img {
-  border-radius: 50%;
   margin: 20px 0;
   border: 5px solid white;
   width: 150px;
@@ -71,3 +69,4 @@ img {
 .btn:hover {
   background: darkorange;
 }
+
